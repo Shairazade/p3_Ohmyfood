@@ -1,10 +1,151 @@
 body {
     font-family: 'Roboto', sans-serif;
-   
+    min-width: 320px;
     max-width: 767px;
+    margin: 20px 0 0 0;
 }
 
 h1 {
     font-family: 'Shrikhand';
 }
 
+a {
+    text-decoration: none;
+}
+
+
+header img {
+    width: 165px;
+    display: block;
+    margin: auto;
+    
+}
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #EAEAEA;
+    box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.3)
+    
+}
+
+.fa-location-dot {
+    transform: translateX(-200%);
+}
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F7;
+    padding: 40px 20px 40px 20px;
+    text-align: center;
+    
+}
+
+
+header h2 {
+    margin: 0px;
+    
+}
+
+
+.bouton {
+    border-radius: 30px;
+    background:linear-gradient(#FF79DA,#9356DC 90%) ;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.bouton a {
+    color: white;
+    font-weight: bold;
+}
+
+
+.nav_container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 40px 20px 40px 20px ;
+
+}
+
+
+
+.menu a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#F7F7F7;
+    color: black;
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+menu a {
+    color: white;
+}
+
+.number {
+    border-radius: 100%;
+    padding: 4px 7px 4px 7px;
+    background-color: #9356DC;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    transform: translateX(-20%);
+}
+
+
+.fa-mobile-screen-button,
+.fa-list-ul {
+    color: #7E7E7E;  
+    transform: translateX(80%);
+}
+
+.fa-store {
+    color: #9356DC;
+    transform: translateX(80%);
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 40px 20px 40px 20px ;
+}
+
+.card {
+    border: solid 2px black;
+    border-radius: 20px;
+    
+}
+
+.card_description {
+    border: solid 2px black;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px 0px 10px;
+
+}
+
+
+.card_description h3 {
+    margin-top: 0px;
+
+}
