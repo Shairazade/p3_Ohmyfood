@@ -142,7 +142,7 @@ article {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    margin: 40px 0px 40px 0px ;
+    margin: 40px 0px 0px 0px ;
     background-color: #F7F7F7;
 }
 
@@ -219,3 +219,47 @@ article h2 {
     margin-bottom: 10px;
 
 }
+
+
+/* Footer */
+
+footer {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #353535;
+    color: white;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+
+ul {
+   list-style: none;
+   padding: 0px;
+   line-height: 30px;
+}
+
+ul a {
+    color: white;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footli1 {
+    transform: translateX(8%);
+}
+
+.footli {
+    transform: translateX(5%);
+}
+
+
+/* PAGE 2 */
