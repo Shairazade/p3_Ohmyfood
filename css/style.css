@@ -9,7 +9,7 @@ h1 {
     font-family: 'Shrikhand';
 }
 
-header p {
+nav p {
     font-weight: 100;
 }
 
@@ -20,6 +20,8 @@ header p {
 a {
     text-decoration: none;
 }
+
+
 
 /* header */
 
@@ -47,7 +49,7 @@ header img {
     transform: translateX(-200%);
 }
 
-.header_container {
+.nav_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +59,7 @@ header img {
 }
 
 
-header h2 {
+nav h2 {
     margin: 0px;
     margin-bottom: 10px;
     
@@ -75,6 +77,10 @@ header h2 {
     
 }
 
+.bouton :hover {
+    color: blue;
+}
+
 .bouton a {
     color: white;
     font-weight: bold;
@@ -84,7 +90,7 @@ header h2 {
 
 /* Menu fonctionnement  */
 
-.nav_container {
+.fonc_container {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -93,7 +99,7 @@ header h2 {
 }
 
 
-.menu a {
+.menu  {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -147,6 +153,7 @@ article {
 }
 
 
+
 /* Card restaurants */
 
 article h2 {
@@ -157,11 +164,16 @@ article h2 {
     padding: 0 20px 60px 20px;
 }
 
+.card a {
+    color: black;
+}
+
 .card {
     background-color: white;
     border-radius: 20px; 
     margin-bottom: 20px;
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.1);
+    
 }
 
 .card_body {
@@ -188,6 +200,9 @@ article h2 {
     padding: 5px 0 5px 0;
     margin: 0px;
     text-align: center;
+    transform: translateY(150%);
+    
+
   
 }
 
