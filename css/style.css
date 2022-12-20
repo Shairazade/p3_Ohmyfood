@@ -68,24 +68,21 @@ nav h2 {
 
 .bouton {
     border-radius: 30px;
-    background:linear-gradient(#FF79DA,#9356DC 90%) ;
+    background:linear-gradient(#FF79DA,#9356DC 90%);
     display: flex;
     align-items: center;
     padding: 20px 40px 20px 40px;
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
     margin-top: 20px;
+    color: white;
+    font-weight: bold;
     
 }
 
-.bouton :hover {
-    color: blue;
+a .bouton:hover {
+   filter: brightness(1.1);
+   box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.4);
 }
-
-.bouton a {
-    color: white;
-    font-weight: bold;
-}
-
 
 
 /* Menu fonctionnement  */
@@ -216,10 +213,43 @@ article h2 {
 
 }
 
-.fa-heart {
+.card_like {
+    position: relative;
+}
+
+
+.fa-heart,
+.da {
     height: 50px;
-    font-size: 23px;
-    
+    font-size: 23px;    
+    transform: translateY(-40%);
+    right: 20%;
+}
+
+.fa-heart{
+    position: absolute;  
+    opacity: 1;
+}
+
+.da {
+    background: -moz-linear-gradient(#FF79DA,#9356DC 70%);
+    background: -webkit-linear-gradient(#FF79DA,#9356DC 70%);
+    background: linear-gradient(#FF79DA,#9356DC 70%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;   
+}
+
+.fa-heart:hover {
+    opacity: 0;
+}
+
+.da:hover {
+    opacity: 1;
+    -webkit-transition: 1000ms 75ms;
+    transition: 1000ms 75ms;
 }
 
 
@@ -279,7 +309,7 @@ ul a {
 
 
 
-/* PAGE 2 */
+/* PAGE 2-3-4-5 */
 
 .header_return {
     box-sizing: border-box;
@@ -329,8 +359,11 @@ main p {
     justify-content: space-between;
 }
 
-.title .fa-heart {
-    width: 40px;
+.title .fa-heart { 
+ right: initial;
+ transform: initial;
+ left: 90%;
+    
 }
 
 .entrees,
