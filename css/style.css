@@ -14,7 +14,7 @@ body {
     display: block;
     background-color:#d3bdee;
     z-index: 1;
-    animation: loader 2.5s linear 1 forwards;
+    animation: loader 0s linear 1 forwards;
  }
 
  .spinner {
@@ -239,11 +239,14 @@ article h2 {
 }
 
 .card_body img {
-    margin-top: -28px;
     height: 100%;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit:cover;
+}
+
+.card_body .pop {
+    margin-top: -28px;
 }
 
 .new {
@@ -255,9 +258,7 @@ article h2 {
     font-weight: bold;
     padding: 5px 5px 5px 5px;
     text-align: center;
-    transform: translateY(150%);
-    
-
+    transform: translateY(150%);  
   
 }
 
@@ -443,24 +444,25 @@ main p {
     background-color: white;
     margin: 15px 0 0 0;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .plate_info {
-    width: 85%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 0px 10px 10px;
     
 }
 
-.plate_info p {
+.plate_info p, h3 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 .check {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     color: white;
@@ -540,11 +542,11 @@ main p {
 }
 
 .price {
+    display: flex;
+    align-items: flex-start;
     font-weight: bold;
     font-size: 15px;
-    display: flex;
-    align-items: flex-end;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 15px 10px 10px;
 }
 
 main .bouton {
