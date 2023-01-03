@@ -14,6 +14,7 @@ body {
     background-color:#d3bdee;
     z-index: 1;
     animation: loader 2.5s linear 1 forwards;
+    margin-top: -20px;
  }
 
  .spinner {
@@ -444,11 +445,18 @@ main p {
     cursor: pointer;
 }
 
+.plate_desc {
+    display: flex;
+    width: 100%;
+    transition: width 1000ms;
+}
+
 .plate_info {
     width: 80%;
     display: flex;
     flex-direction: column;
     padding: 10px 0px 10px 10px;
+    
     
 }
 
@@ -481,6 +489,13 @@ main p {
     animation: scroll 0.5s linear forwards;
     width: 20%;
 }
+
+.plate:hover .plate_desc {
+    width: 80%;
+    
+}
+
+
 
 @keyframes scroll {
     from {
